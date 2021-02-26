@@ -9,6 +9,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 100px 0 0 0;
 }
 :root{
     --prim-color: #a32a2a;
@@ -23,11 +24,15 @@ a{
 }
 .menu{
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #a32a2a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 .menu__logo{
     width: 110px;
@@ -94,6 +99,9 @@ a{
     grid-template-columns: 1.3fr 1fr;
     grid-template-areas: 'texto imagen';
     column-gap: 10px;
+    background-color: #ebe6e6;
+    padding: 20px;
+    border-radius: 5px;
 }
 .section-title{
     color: var(--prim-color);
@@ -190,8 +198,6 @@ a{
     border-radius: 10px;
     border: 4px solid var(--prim-color);
     transition: .5s;
-}
-.card:hover{
     background-color: var(--prim-color);
 }
 .card:hover img{
